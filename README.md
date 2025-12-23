@@ -6,7 +6,7 @@
 [![HTML5](https://img.shields.io/badge/Web-HTML5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/Style-CSS3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-**A fun, interactive web app where you control a universe of 3D particles using just with your hand movements.**
+**A fun, interactive web app where you control a universe of 3D particles using just with your one-hand movement.**
 
 ---
 
