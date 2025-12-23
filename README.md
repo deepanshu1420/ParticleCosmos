@@ -10,7 +10,7 @@
 
 ---
 
-🌐 **Try the Particle Cosmos in your browser:** [Live Demo](https://particlecosmos.netlify.app/)
+🌐 **Try the Particle Cosmos in your browser :** [Live Demo](https://particlecosmos.netlify.app/)
 
 ---
 
