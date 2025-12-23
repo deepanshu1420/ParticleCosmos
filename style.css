@@ -1,0 +1,109 @@
+body { margin: 0; overflow: hidden; background-color: #000; font-family: 'Segoe UI', sans-serif; color: white; }
+canvas { display: block; }
+
+/* UI Overlay - COMPACT SIZE */
+#ui {
+    position: absolute; top: 20px; left: 20px; color: #00ffcc;
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 15px; 
+    border-radius: 8px; border: 1px solid #333;
+    pointer-events: none; user-select: none; z-index: 10; display: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    font-size: 13px; 
+    min-width: 200px;
+    line-height: 1.4; 
+}
+
+.ui-header {
+    font-size: 10px; color: #00ccff; margin-bottom: 8px; font-weight: bold; 
+    letter-spacing: 0.5px; border-bottom: 1px solid #333; padding-bottom: 5px; line-height: 1.2;
+}
+
+.shape-title {
+    font-size: 20px; font-weight: bold; margin-bottom: 2px; color: white;
+}
+
+.version-text {
+    color: #aaa; font-size: 10px; margin-bottom: 8px;
+}
+
+/* Status Text Styling */
+#status-line {
+    margin-top: 10px; 
+    padding-top: 8px;
+    border-top: 1px solid #444;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-idle { color: #888; }
+
+/* --- COLORS & STYLE --- */
+.status-palm { color: #00ff00; text-shadow: 0 0 10px #00ff00; } /* Green */
+.status-punch { color: #ffcc00; text-shadow: 0 0 10px #ffcc00; } /* Yellow */
+.status-backhand { color: #ff0055; text-shadow: 0 0 15px #ff0055; font-weight: 900; } /* Red */
+
+/* Full Screen Overlay */
+#overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: #050505; z-index: 20;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background-image: radial-gradient(circle at center, #111 0%, #000 70%); /* Subtle gradient background */
+}
+
+/* --- UPDATED GLASSMORPHIC BOX --- */
+.box {
+    /* Glass Effect */
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    padding: 50px; 
+    border-radius: 20px; 
+    max-width: 600px; 
+    text-align: center;
+    
+    /* Deep Shadow + Glow */
+    box-shadow: 
+        0 20px 50px rgba(0,0,0, 0.9), 
+        0 0 30px rgba(0, 255, 204, 0.1); /* Subtle theme glow */
+}
+
+/* Typography Updates */
+h1 { 
+    margin-top: 0; 
+    color: #00ffcc; 
+    font-size: 26px; /* Adjusted for longer text */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    line-height: 1.4;
+    text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+p { 
+    color: #eee; 
+    font-size: 16px;
+    line-height: 1.6; 
+    font-weight: 300;
+}
+
+button {
+    padding: 18px 40px; font-size: 16px; cursor: pointer;
+    background: linear-gradient(135deg, #00ffcc 0%, #00aa88 100%); /* Gradient Button */
+    border: none; color: #000; font-weight: bold;
+    margin-top: 25px; border-radius: 50px; transition: 0.3s;
+    text-transform: uppercase; letter-spacing: 2px;
+    box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3);
+}
+button:hover { 
+    background: #fff; 
+    color: #000; 
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 255, 204, 0.5); 
+}
+
+.code-box { background: #000; padding: 5px 10px; border-radius: 4px; font-family: monospace; color: #0f0; }
