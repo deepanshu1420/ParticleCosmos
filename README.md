@@ -69,7 +69,7 @@ It uses **MediaPipe** to track your hand and **Three.js** to create the visuals,
 ![Quantum Field](Screenshots/image5.png)
 *A scattered field of particles floating freely.*
 
-### Fully Responsive for Smaller Screens (Mobile Devices)
+### Responsive Design
 ![Responsive Design](Screenshots/image6.png)
 *A scattered particle field optimized for mobile screens.*
 
