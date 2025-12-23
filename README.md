@@ -10,7 +10,7 @@
 
 ---
 
-🌐 **Try it Live:** [particlecosmos.netlify.app](https://particlecosmos.netlify.app/)
+🌐 **Try the Particle Cosmos in your browser:** [Live Demo](https://particlecosmos.netlify.app/)
 
 ---
 
@@ -22,10 +22,10 @@ It uses **MediaPipe** to track your hand and **Three.js** to create the visuals,
 ---
 
 ## ⚡ Features
-- **Control with Gestures:**
-  - 👋 **Back of Hand:** Switches to the next shape.
-  - ✊ **Fist:** Zooms into the particles.
-  - ✋ **Open Palm:** Zooms out.
+- **Control particles motion through hand gestures:**
+  - 👋 **Showing Back of your Hand:** Switches to the next shape.
+  - ✊ **Showing Fist (punch):** Zooms into the particles.
+  - ✋ **Showing Open Palm:** Zooms out the particles.
 - **Cool 3D Shapes:** Watch particles instantly form into shapes like a *Nebula Swirl*, *Cyber Cube*, *Hyper Sphere*, and more.
 - **Smooth Animation:** The particles flow and rotate automatically, reacting smoothly to your movements.
 - **Modern Design:** Features a clean, glass-like interface that overlays the action.
@@ -37,6 +37,13 @@ It uses **MediaPipe** to track your hand and **Three.js** to create the visuals,
 - **MediaPipe Hands:** The technology that lets the computer "see" and track your hand through the webcam.
 - **JavaScript:** The logic that connects your hand movements to the visuals.
 - **HTML & CSS:** Builds the website structure and makes it look good.
+
+---
+
+## 📌 Important Notes (Before Running this project):
+- This project requires webcam access to track hand gestures for particle interaction such as zooming and movement. Please allow camera permission when prompted.
+- If you open the .html file directly in your browser, modern browsers like Chrome, Edge, and Firefox may block webcam access for security reasons.
+- I’ve implemented logic in the code to redirect the site to a localhost URL. If you see a warning, simply click “Fix URL Automatically” on the webpage to continue safely.
 
 ---
 
@@ -64,20 +71,16 @@ It uses **MediaPipe** to track your hand and **Three.js** to create the visuals,
 
 ---
 
-## 🛠 Installation / Usage
+## 🛠 Installation/Usage
 
 If you want to run this project on your own computer:
 
 ```bash
-# 1. Download the project
-git clone [https://github.com/deepanshu1420/particlecosmos.git](https://github.com/deepanshu1420/particlecosmos.git)
+# Clone the repository
+git clone <your-repo-link>
 
-# 2. Go into the project folder
+# Navigate to the project folder
 cd particlecosmos
 
-# 3. Start a local server (Important for the webcam to work!)
-# If you have Python installed, you can simply run:
-python -m http.server 5500
+# Open index.html in your browser or click on Go Live (Server Extension in Vs Code)
 
-# 4. Open your browser and go to:
-# http://localhost:5500
